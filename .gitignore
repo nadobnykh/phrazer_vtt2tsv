@@ -1,2 +1,10 @@
 bin/*
 obj/*
+obj/phrazer.csproj.nuget.dgspec.json
+obj/phrazer.csproj.nuget.g.props
+obj/phrazer.csproj.nuget.g.targets
+obj/project.assets.json
+
+_appdata/input/*
+_appdata/output/*
+!.gitkeep
