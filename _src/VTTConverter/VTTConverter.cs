@@ -84,7 +84,7 @@ namespace Phrazer
             
             // Add header
             if(!SubsConfig.generateAllInputsStatisticsFile) {
-                tsvRows.Add(SubsConfig.defaultFromLanguage + "\t" + SubsConfig.defaultToLanguage + "\t" + "LEN" + "\t" + "ROW" + "\t" + "TIME");
+                tsvRows.Add(SubsConfig.defaultFromLanguage + "\t" + SubsConfig.defaultToLanguage + "\t" + "GENDER" + "\t" + "ROW" + "\t" + "TIME");
                 vocabulary.Add(SubsConfig.defaultFromLanguage + "\t" + SubsConfig.defaultToLanguage);
             }
 
