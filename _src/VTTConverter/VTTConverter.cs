@@ -108,6 +108,11 @@ namespace Phrazer
                 string rowText = SubsTextSanitizer.SanitizeText(row);
                 if(rowText == "") continue;
 
+                // Einzelne Wörter in der Zeile - ein bis max. 2 Wörter ohne Punkt
+                if(SubsHelper.GetWordsCount(rowText) == 1 && !rowText.Contains('.')) {
+                    rowText += ".";
+                }
+
                 foreach(string item in rowText.Split(" "))
                 {
                     string word = item.Trim();
