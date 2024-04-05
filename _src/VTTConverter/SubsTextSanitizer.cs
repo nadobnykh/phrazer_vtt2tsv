@@ -195,7 +195,7 @@ namespace Phrazer
 
             text = text.Trim();
 
-            if(System.Text.RegularExpressions.Regex.IsMatch(text, @"[^a-zA-Z,\s'-]+", System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+            if(Regex.IsMatch(text, @"[^a-zA-Z,\s'-]+", RegexOptions.IgnoreCase))
             return "";
 
             if(text == "I" || text == "I'm" || text == "I've" || text == "I'd" || text == "I'll") return text;
