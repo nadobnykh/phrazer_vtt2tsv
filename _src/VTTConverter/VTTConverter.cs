@@ -209,7 +209,11 @@ namespace Phrazer
                     // wenn string zu kurz oder next zu kurz - einfach weitergehen.
                     if(textParts.Length > i+1) partsBuffer = partsBuffer + ", ";
                     if(textParts.Length == i+2 && textParts[i+1].Length < 12) continue;
-                    if(partsBuffer.Length < 15 || SubsHelper.GetWordsCount(partsBuffer) < 3) continue;
+
+                    if(    !partsBuffer.EndsWith(".") 
+                        && !partsBuffer.EndsWith("?") 
+                        && !partsBuffer.EndsWith("!")
+                        && partsBuffer.Length < 12) continue;
 
                     SaveTextPartToList(partsBuffer, ref rowNumber, ref time);
                     partsBuffer = "";
