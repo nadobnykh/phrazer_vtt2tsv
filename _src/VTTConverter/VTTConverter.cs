@@ -200,7 +200,7 @@ namespace Phrazer
             string[] textParts = new string[20];
             
             // So now we have got a real story mode ;)
-            if(textBuffer.Length > 50) {
+            if(textBuffer.Length > 45) {
                 string partsBuffer = "";
                 textParts = textBuffer.Split(",");
                 for(int i = 0; i < textParts.Length; i++) {
